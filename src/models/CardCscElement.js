@@ -7,7 +7,7 @@ class CardCscElement extends CardInputElement {
       name: 'cvv',
       type: 'tel',
       length: 3,
-      mask: '111',
+      mask: [/\d/, /\d/, /\d/],
     });
 
     element.setAttribute('style', '-webkit-text-security: disc;');

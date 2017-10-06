@@ -1,23 +1,23 @@
-<form class="card-form" data-tokenizer-element="form">
+<form class="card-form" data-tokenizer-element="form" novalidate>
   <div class="card-form-row card-form-row-pan">
     <div>
-      <input data-tokenizer-element="pan" placeholder="XXXX XXXX XXXX XXXX"/>
+      <input type="tel" autocomplete="cc-number" placeholder="XXXX XXXX XXXX XXXX" data-tokenizer-element="pan" />
     </div>
     <div data-tokenizer-error="pan" class="error"></div>
   </div>
   <div class="card-form-row">
     <div class="card-form-exp">
       <div class="card-form-exp-month">
-        <input data-tokenizer-element="expMonth" placeholder="MM" />
+        <input type="tel" autocomplete="cc-exp-month" placeholder="MM" data-tokenizer-element="expMonth" />
       </div>
       <div class="card-form-exp-year">
-        <input data-tokenizer-element="expYear" placeholder="YY" />
+        <input type="tel" autocomplete="cc-exp-year" placeholder="YY" data-tokenizer-element="expYear" />
       </div>
       <div data-tokenizer-error="expDate" class="error"></div>
     </div>
     <div class="card-form-cvv">
       <div>
-        <input data-tokenizer-element="cvv" placeholder="CVV" />
+        <input type="tel" autocomplete="cc-csc" placeholder="CVV" data-tokenizer-element="cvv" />
       </div>
       <div data-tokenizer-error="cvv" class="error"></div>
     </div>

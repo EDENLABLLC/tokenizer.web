@@ -1,12 +1,13 @@
 
 class InputElement {
-  constructor (element) {
+  constructor (element, options) {
     this.dirty = false;
     this.pristine = true;
     this.touched = false;
     this.focused = false;
     this.__value = element.value;
     this.element = element;
+    this.options = options;
 
     this.onKeydown = this.onKeydown.bind(this);
     this.onFocus = this.onFocus.bind(this);

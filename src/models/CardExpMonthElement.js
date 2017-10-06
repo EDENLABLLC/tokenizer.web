@@ -6,7 +6,7 @@ class CardExpMonthElement extends CardInputElement {
       autocomplete: 'cc-exp-month',
       name: 'expMonth',
       length: 2,
-      mask: '11',
+      mask: [/\d/, /\d/],
     });
 
     this.element.addEventListener('keydown', function (e) {
