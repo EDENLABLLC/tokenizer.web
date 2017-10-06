@@ -9,7 +9,7 @@ class CardExpYearElement extends CardInputElement {
       autocomplete: 'cc-exp-year',
       name: 'expYear',
       length: 2,
-      mask: '11',
+      mask: [/\d/, /\d/],
     });
   }
 

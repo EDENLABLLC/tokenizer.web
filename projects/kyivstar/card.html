@@ -2,7 +2,7 @@
     <div class="card__row" data-tokenizer-error-wrap="pan">
         <label for="card_numb" class="label"><%= t('numberTitle') %></label>
         <div class="card__type" data-tokenizer-card-type></div>
-        <input placeholder="____ ____ ____ ____"  data-tokenizer-element="pan" />
+        <input type="tel" autocomplete="cc-number" placeholder="____ ____ ____ ____" data-tokenizer-element="pan" />
     </div>
     <div class="card__error" data-tokenizer-error="pan"></div>
     <div class="card__row">
@@ -10,19 +10,19 @@
           <div class="card__day">
               <label for="" class="label"><%= t('expDateTitle') %></label>
               <div class="spinner">
-                  <input data-tokenizer-element="expMonth" />
+                  <input type="tel" autocomplete="cc-exp-month" data-tokenizer-element="expMonth" />
               </div>
           </div>
           <div class="card__year">
               <div class="spinner">
-                  <input data-tokenizer-element="expYear" />
+                  <input type="tel" autocomplete="cc-exp-year" data-tokenizer-element="expYear" />
               </div>
           </div>
           <div class="card__error" data-tokenizer-error="expDate"></div>
         </div>
         <div class="card__cvv" data-tokenizer-error-wrap="cvv">
             <label for="cvv" class="label"><%= t('cvvTitle') %></label>
-            <input data-tokenizer-element="cvv" />
+            <input type="tel" autocomplete="cc-csc" data-tokenizer-element="cvv" />
             <div class="card__error" data-tokenizer-error="cvv"></div>
         </div>
     </div>

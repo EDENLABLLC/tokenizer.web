@@ -6,7 +6,7 @@ class CardPanElement extends CardInputElement {
       autocomplete: 'cc-pan',
       name: 'pan',
       length: 16,
-      mask: '1111 1111 1111 1111',
+      mask: [/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/],
       error: error,
     });
   }
