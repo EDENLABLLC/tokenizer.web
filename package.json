@@ -1,6 +1,6 @@
 {
   "name": "tokenizer.web",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Payment tokenizer for card processing over PCI DSS",
   "main": "server/index.js",
   "scripts": {
