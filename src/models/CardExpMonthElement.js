@@ -9,7 +9,7 @@ class CardExpMonthElement extends CardInputElement {
       mask: [/\d/, /\d/],
     });
 
-    this.element.addEventListener('keydown', function (e) {
+    this.element.addEventListener('keyup', function (e) {
       var keyCode = e.which || e.keyCode;
       var number = Number(String.fromCharCode(keyCode));
       if (isNaN(number) || number < 2 || element.value.length > 1) return;
